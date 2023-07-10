@@ -8,14 +8,20 @@ const Portfolio = () => {
     {
       id: 1,
       src: realestate,
+      url:"https://propsale.netlify.app/",
+      githubLink:"https://github.com/ad1tyabhatt/Real-Estate"
     },
     {
       id: 2,
       src: cinemate,
+      githubLink:"https://github.com/ad1tyabhatt/React-MasterClass/tree/master/cinemate",
+      url:"https://cinemate-ab.netlify.app/"
     },
     {
       id: 3,
       src: taskmate,
+      url:"https://taskmate-ab.netlify.app/",
+      githubLink:"https://github.com/ad1tyabhatt/React-MasterClass/tree/master/cinemate"
     },
    
   ];
@@ -34,7 +40,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src,url,githubLink }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -42,10 +48,10 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105" onClick={()=>{ window.open(url, '_blank');}}>
                   Demo
                 </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button  onClick={()=>{ window.open(githubLink, '_blank');}} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   Code
                 </button>
               </div>
