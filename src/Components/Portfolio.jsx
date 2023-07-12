@@ -2,23 +2,29 @@ import React from "react";
 import realestate from "../assets/portfolio/realestate.png";
 import cinemate from "../assets/portfolio/cinemate.png";
 import taskmate from "../assets/portfolio/taskmate.jpg";
+import dashboard from "../assets/portfolio/dashboard.png"
 
 const Portfolio = () => {
   const portfolios = [
+    {id: 1,
+      src: dashboard,
+      url:"https://dashboard-aditya.netlify.app/",
+      githubLink:"https://github.com/ad1tyabhatt/dashboard-react"},
+
     {
-      id: 1,
+      id: 2,
       src: realestate,
       url:"https://propsale.netlify.app/",
       githubLink:"https://github.com/ad1tyabhatt/Real-Estate"
     },
     {
-      id: 2,
+      id: 3,
       src: cinemate,
       githubLink:"https://github.com/ad1tyabhatt/React-MasterClass/tree/master/cinemate",
       url:"https://cinemate-ab.netlify.app/"
     },
     {
-      id: 3,
+      id: 4,
       src: taskmate,
       url:"https://taskmate-ab.netlify.app/",
       githubLink:"https://github.com/ad1tyabhatt/React-MasterClass/tree/master/cinemate"
